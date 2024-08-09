@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--------->
 
 <head>
     <meta charset="UTF-8">
@@ -27,15 +28,15 @@
     </header>
 
     <section class="parallax">
-        <img src="images/hill1.png" id="hill1" alt="Hill 1">
-        <img src="images/hill2.png" id="hill2" alt="Hill 2">
-        <img src="images/hill3.png" id="hill3" alt="Hill 3">
-        <img src="images/hill4.png" id="hill4" alt="Hill 4">
-        <img src="images/hill5.png" id="hill5" alt="Hill 5">
-        <img src="images/tree.png" id="tree" alt="Tree">
-        <h2 id="text">Jacqueline Toquero</h2>
-        <img src="images/leaf.png" id="leaf" alt="Leaf">
-        <img src="images/plant.png" id="plant" alt="Plant">
+        <img src="images/hill1.png" id="hill1" alt="Hill 1" style="width:100%;">
+        <img src="images/hill2.png" id="hill2" alt="Hill 2" style="width:100%;">
+        <img src="images/hill3.png" id="hill3" alt="Hill 3" style="width:100%;">
+        <img src="images/hill4.png" id="hill4" alt="Hill 4" style="width:100%;">
+        <img src="images/hill5.png" id="hill5" alt="Hill 5" style="width:100%;">
+        <img src="images/tree.png" id="tree" alt="Tree" style="width:100%;">
+        <h2 id="text" style="font-size:8vw;">Jacqueline Toquero</h2>
+        <img src="images/leaf.png" id="leaf" alt="Leaf" style="width:100%;">
+        <img src="images/plant.png" id="plant" alt="Plant" style="width:100%;">
     </section>
 
 
@@ -45,27 +46,34 @@
   <!-----------about------------>
   <section id="about">
     <section class="sec">
-        <img src="images/user2.png">
+
+        <img src="images/user3.png">
+
+        
+
     <h1 class=>ABOUT ME</h1>
-    <h5>Designer</h5> <br>
+    <h5>COMPUTER ENGINEERING STUDENT</h5> <br>
     <div class="about-text">
         <p>Currently attending college at Polytechnic University of the Philippines where I hope to finish and further grow my career. <br> <br>
             I love playing mobile and desktop games which I try to balance that with my new interest in Web designing. <br> <br> I have been playing Table Tennis for months and engaging more to new hobbies to widen my knowledge and learn more.
         </p>
-        <button type="button">Let's Talk</button>
+
+        <a href="#Contact"> <button>Let's Talk</button></a>
+
+
     </div>
 
     <div> 
         <section class="course">
             <div class="row">
-                <div class="course-col">
+                <div class="course-col block">
                     <h1><span style="text-decoration: underline;">SKILLS</span></h1> <BR>
                     <p>Photo Shop<br>
                     Graphic Designing<br>
                     video editing <br>
                     illustrating</p>
                 </div>
-                <div class="course-col">
+                <div class="course-col block">
                     <h1><span style="text-decoration: underline;">WORK EXPERIENCE</span></h1> <BR>
                         <p>McDonald's Service Crew <br>
                         (2022-2023)<br>
@@ -73,7 +81,7 @@
                          (2018-2019)
                 
                 </div>
-                <div class="course-col">
+                <div class="course-col block">
                     <h1><span style="text-decoration: underline;">EDUCATION</span></h1> <BR>
                         <p>COLLEGE | Polytechnic University of the Philippines <br>
                         SECONDARY  | Biñan Secondary School of Applied Academics<br>
@@ -95,21 +103,21 @@
         
     
         <div class="row">
-            <div class="campus-col">
-                <img src="images/canva.png" width="500" height="600">
+            <div class="campus-col block">
+                <img src="images/canva.png" width="500" height="600" style="max-width:100%;height:auto;">
                 <div class="layer">
                     <h3>GRAPHIC DESIGN</h3>
                 </div>
             </div>
             
-            <div class="campus-col">
-                <img src="images/dev.png" width="500" height="600">
+            <div class="campus-col block">
+                <img src="images/dev.png" width="500" height="600" style="max-width:100%;height:auto;">
                 <div class="layer">
                     <h3>WEB DEV</h3>
                 </div>
             </div>
-            <div class="campus-col">
-                <img src="images/draw.png" width="500" height="600">
+            <div class="campus-col block">
+                <img src="images/draw.png" width="500" height="600" style="max-width:100%;height:auto;">
                 <div class="layer">
                     <h3>DRAWING</h3>
                 </div>
@@ -120,34 +128,45 @@
 
 
 <!--------Contact----------->
-
 <section id="Contact">
     <h1 class=>CONTACT ME!</h1>
-    <form action="" class="form">
-        <input type="email" name="email" class="input" placeholder="Enter Your Name">
-        <input type="email" name="email" class="input"
-        placeholder="Enter Your Email">
+    <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <input type="hidden" name="access_key" value="4957500c-9143-4d32-920e-1f3de7fafa1c">
+        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <input type="email" name="email" class="input" placeholder="Enter Your Email">
+
+ 
         <textarea name="message" id="message" cols="70" rows="20"
         placeholder="Enter Your Message"></textarea>
         <input type="submit" value="Submit" id="submit">
     </form>
 </section>
-    
+
+
 
 <!---------Footer---------->
 
 <section class="footer">
-    <h4>About</h4>
-    <p>Create your reality.</p>
+
     <div class="icons">
+        <h4>About</h4>
+    <p>Create your reality.</p>
+    <a href="https://www.facebook.com/piaaaazxz.cx/">
         <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/JacquelineToquero/">
+        <i class="fa fa-github"></i>
+    </a>
+    <a href="https://t.me/yapiiee">
+        <i class="fa fa-telegram"></i>
+    </a>
+
     </div>
+    
+
+
     <p><i class="fa fa-heart-o"></i></p>
 </section>
-
 
 <script src="script.js"></script>
 
@@ -155,4 +174,3 @@
 
 </body>
 </html>
-

@@ -73,8 +73,21 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
 }
+
+@media (max-width: 768px) {
+  .parallax {
+      margin-right: -1500px;
+    }
+  #text{
+    
+  }
+  }
+
+  ......
+
+
 
 #text {
     position: absolute;
@@ -83,6 +96,7 @@ header {
     text-shadow: 2px 2px 4px rgba(0,0,0,.2);
     text-align: center;
 }
+
 
 .parallax img {
     position: absolute;
@@ -220,16 +234,45 @@ header {
     border-radius: 50%;
     color: white;
     box-shadow: 0 0 25px #FA7070;
+    animation: floatimage 4s ease-in-out infinite;
+  }
+
+  @keyframes floatimage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2.4rem);
+    }
+    100%{
+      transform: translateY(0);
+    }
   }
   
- 
-
+  
 .about-text p{
     color: #ffffff;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
 }
 
 button{
@@ -269,6 +312,7 @@ h1{
     padding: 13px 30px;
     box-sizing: border-box;
     transition:0.5s;
+    box-shadow: 0 0 9px #FA7070;
   }
 
 h3{
@@ -295,11 +339,11 @@ h3{
 }
 
 #Work h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .campus h1{
     color:#59c285;
-    text-shadow: 5px 2px #37304e;
+    text-shadow: 5px 2px #49131f;
 }
 
 
@@ -329,6 +373,7 @@ h3{
   width: 100%;
   display: block;
   margin-bottom: 50px;
+  box-shadow: 0 0 25px #FA7070;
 }
  .layer{
   height: 100%;
@@ -359,8 +404,23 @@ h3{
   opacity:1;
 }
 
+@media (max-width: 768px) {
+  .campus-col img{
+      display: flex;
+  }
+  .campus-col img{
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
 
 
+  }
+
+}
 
 
   /*------------Contact Section----------*/
@@ -384,6 +444,7 @@ h3{
     margin: 50px;
     color: #fff;
     text-align: center;
+    animation: floatimage 2s ease infinite;
 }
 .form{
     display: flex;
