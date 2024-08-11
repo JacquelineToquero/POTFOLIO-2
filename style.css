@@ -77,18 +77,11 @@ header {
 }
 
 @media (max-width: 768px) {
-  .parallax {
+  .parallax{
       margin-right: -1500px;
     }
-  #text{
-    
-  }
-  }
-
-  ......
-
-
-
+}
+  
 #text {
     position: absolute;
     font-size: 4rem;
@@ -178,6 +171,7 @@ header {
 
     #text {
         font-size: 2.5rem;
+        top: 25%; 
     }
 
     .sec h2 {
@@ -296,6 +290,12 @@ h1{
     font-size: 31px;
     font-weight: 600;
   }
+
+  .campus p{
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+  }
   
   .row{
     margin-top: 5%;
@@ -323,7 +323,7 @@ h3{
   
   }
   .course-col:hover{
-    box-shadow: 0 0 20px 0px  #FA7070;
+    box-shadow: 0 0 60px 0px  #FA7070;
   }
   @media(max-width: 700px){
     .row{
@@ -376,7 +376,7 @@ h3{
   box-shadow: 0 0 25px #FA7070;
 }
  .layer{
-  height: 100%;
+  height: 95%;
   width:100%;
   position: absolute;
   top:0;
@@ -385,13 +385,14 @@ h3{
 }
 .layer:hover{
   background:#FA7070;
+  opacity: 80%;
 
 }
 .layer h3{
   width:100%;
   font-weight: 500;
-  color: #003329;
-  font-size: 26px;
+  color: #ffffff;
+  font-size: 2em;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -416,10 +417,16 @@ h3{
     bottom: auto;
     left: auto;
     right: auto;
-
-
   }
-
+  .layer:hover{
+    background:#FA7070;
+    opacity: 80%;
+    height: 83%;
+  }
+  .layer:hover h3{
+    bottom: 35%;
+    opacity:1;
+  }
 }
 
 
@@ -509,3 +516,5 @@ h3{
   .fa-heart-o{
     color: #f44336;
   }
+
+  
