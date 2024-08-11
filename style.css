@@ -346,6 +346,12 @@ h3{
     text-shadow: 5px 2px #49131f;
 }
 
+@media(max-width: 700px){
+  #Work p{
+      font-size: 1em;
+
+  }}
+
 
 .campus{
   width: 80%;
