@@ -15,7 +15,7 @@ body {
 
 header {
     margin-bottom: 0%;
-    background: #003329;
+    background-color: #003329;
     position: absolute;
     top: 0;
     left: 0;
@@ -25,11 +25,9 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    position: fixed;
-
+    position: sticky;
+    transition: background-color 0.4s ease-in-out;
 }
-
-
 
 .logo {
     font-size: 2rem;
@@ -528,9 +526,5 @@ h3{
     color: #f44336;
   }
 
-
-
-
-/*-----------------------*/
 
 
