@@ -14,6 +14,8 @@ body {
 }
 
 header {
+    margin-bottom: 0%;
+    background: #003329;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,12 +25,19 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    position: fixed;
+
 }
+
+
 
 .logo {
     font-size: 2rem;
-    color: #359381;
     pointer-events: none;
+    background: radial-gradient(circle, rgb(245, 173, 213), rgb(114, 19, 43));
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
 }
 
 .menu-icon {
@@ -68,20 +77,22 @@ header {
 }
 
 .parallax {
+    padding-left: 10%;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: visible;
+    
 }
 
 @media (max-width: 768px) {
   .parallax{
-      margin-right: -1500px;
-    }
+     margin-right: -1500px;
+  }
 }
-  
+
+
 #text {
     position: absolute;
     font-size: 4rem;
@@ -325,13 +336,7 @@ h3{
   .course-col:hover{
     box-shadow: 0 0 60px 0px  #FA7070;
   }
-  @media(max-width: 700px){
-    .row{
-        flex-direction: column;
-  
-    }}
 
-    
 /*------------WORK-----------*/
 
 #Work{
@@ -483,7 +488,7 @@ h3{
     background-color: #FA7070;
     color: #fff;
     text-decoration: none;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
@@ -500,8 +505,8 @@ h3{
 .footer{
     width:100%;
     text-align: center;
-    padding: 30px 0;
-    background-color: #071411;
+    padding: 30px 0 ;
+    background-image: linear-gradient(rgb(3, 20, 17), rgb(6, 49, 16));
   }
   .footer h4{
     margin-bottom: 25px;
@@ -523,4 +528,9 @@ h3{
     color: #f44336;
   }
 
-  
+
+
+
+/*-----------------------*/
+
+
