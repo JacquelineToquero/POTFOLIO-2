@@ -9,56 +9,61 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+          
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+         </div>
+   
 
-    <header>
-        <h2 class="logo">Pia</h2>
-        <div class="menu-icon" id="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="navigation" id="navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#Work">Work</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Start of Header -->
+  <header>
+    <a href="#" class="logo">Pi<span>aa</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
 
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  <!-- End of Header -->
 
-    <section class="parallax">
-        <img src="images/hill1.png" id="hill1" alt="Hill 1" >
-        <img src="images/hill2.png" id="hill2" alt="Hill 2" >
-        <img src="images/hill3.png" id="hill3" alt="Hill 3" >
-        <img src="images/hill4.png" id="hill4" alt="Hill 4" >
-        <img src="images/hill5.png" id="hill5" alt="Hill 5" >
-        <img src="images/tree.png" id="tree" alt="Tree" >
-        <h2 id="text" style="font-size:8vw;">Jacqueline Toquero</h2>
-        <img src="images/leaf.png" id="leaf" alt="Leaf" >
-        <img src="images/plant.png" id="plant" alt="Plant" >
-    </section>
+  <!-- Start of Home Section -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h5>Hey, I'm</h5>
+      <h1>Jacqueline Sophia Toquero :)</h1>
+      <h6> a <span>Computer Engineering Student.</h6>
+      <a href="#" class="btn">Download CV</a>
+    </div>
 
-
-
-
+    <div class="home-img">
+      <img src="images/ako2.png.jpg" alt="anime">
+    </div>
+  </section>
+  <!-- End of Home Section -->
 
   <!-----------about------------>
   <section id="about">
     <section class="sec">
 
-        <img src="images/me.png">
+        <img src="images/ako2.png.jpg">
 
         
 
     <h1 class=>ABOUT ME</h1>
     <h5>COMPUTER ENGINEERING STUDENT</h5> <br>
     <div class="about-text">
-        <p>Currently attending college at Polytechnic University of the Philippines where I hope to finish and further grow my career. <br> <br>
-            I love playing mobile and desktop games which I try to balance that with my new interest in Web designing. <br> <br> I have been playing Table Tennis for months and engaging more to new hobbies to widen my knowledge and learn more.
+        <p>Currently attending college at Polytechnic University of the Philippines where I hope to finish and further grow my career. 
+            I love playing mobile and desktop games which I try to balance that with my new interests I have been playing Table Tennis for months and engaging more to new hobbies to widen my knowledge and learn more.
         </p>
 
-        <a href="#Contact"> <button>Let's Talk</button></a>
+        <a href="#contact"> <button>Let's Talk</button></a>
 
 
     </div>
@@ -93,56 +98,71 @@
     </div>  
     </section>
   </section>
-  
 
-<!--------WORK---------->
+  <!-- Start of Resume Section -->
+  <section class="resume" id="resume">
+    <div class="center">
+      <h3>INTERESTS</h3>
+    </div>
 
-<section id="Work">
-    <section class="campus">
-        <h1>INTERESTS</h1>
-        <p>I'm passionate about gaming, drawing, and graphic design. <br> I love exploring immersive game worlds, expressing my creativity through art, <br> and creating visually compelling designs.</p>
-        
-    
-        <div class="row">
-            <div class="campus-col block">
-                <img src="images/canva.png" width="500" height="600" style="max-width:100%;height:auto;">
-                <div class="layer">
-                    <h3>GRAPHIC DESIGN</h3>
-                </div>
-            </div>
-            
-            <div class="campus-col block">
-                <img src="images/dev.png" width="500" height="600" style="max-width:100%;height:auto;">
-                <div class="layer">
-                    <h3>GAMING</h3>
-                </div>
-            </div>
-            <div class="campus-col block">
-                <img src="images/draw.png" width="500" height="600" style="max-width:100%;height:auto;">
-                <div class="layer">
-                    <h3>DRAWING</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-</section>
+    <div class="resume-content">
+      <!-- Education 01 -->
+      <div class="box">
+        <img src="images/draw.png">
+        <h4>DRAWING</h4>
+      </div>
+
+      <!-- Education 02 -->
+      <div class="box">
+        <img src="images/canva.png">
+        <h4>GRAPHIC DESIGNING</h4>
+      </div>
+      
+      <!-- End of Education -->
+
+      <!-- Experience 01 -->
+      <div class="box">
+        <img src="images/gaming.png">
+        <h4>GAMING</h4>
+      </div>
+
+      <!-- Experience 02 -->
+      <div class="box">
+        <img src="images/movies.png">
+        <h4>WATCHING MOVIES</h4>
+      </div>
+      <!-- End of Experience -->
+
+    </div>
+  </section>
+  <!-- End of Resume Section -->
 
 
-<!--------Contact----------->
-<section id="Contact">
-    <h1 class=>CONTACT ME!</h1>
-    <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+
+
+  <!-- Start of Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-center">
+      <h3>Get In Touch</h3>
+    </div>
+
+    <div class="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
         <input type="hidden" name="access_key" value="4957500c-9143-4d32-920e-1f3de7fafa1c">
         <input type="text" name="name" class="input" placeholder="Enter Your Name">
         <input type="email" name="email" class="input" placeholder="Enter Your Email">
+        
+        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="send-btn">
+      </form>
+    </div>
+  </section>
+  <!-- End of Contact Section -->
 
- 
-        <textarea name="message" id="message" cols="70" rows="20"
-        placeholder="Enter Your Message"></textarea>
-        <input type="submit" value="Submit" id="submit">
-    </form>
-</section>
-
+  
+  
+</body>
 
 
 <!---------Footer---------->
@@ -150,7 +170,6 @@
 <section class="footer">
 
     <div class="icons">
-        <h4>About</h4>
     <p>Create your reality.</p>
     <a href="https://www.facebook.com/piaaaazxz.cx/">
         <i class="fa fa-facebook"></i>
@@ -168,7 +187,4 @@
 
     <p><i class="fa fa-heart-o"></i></p>
 </section>
-
-    
-</script>
 </html>
