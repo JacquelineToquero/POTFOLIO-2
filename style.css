@@ -346,6 +346,94 @@ h3{
   .course-col:hover{
     box-shadow: 0 0 60px 0px  #FA7070;
   }
+/*-------Education--------*/
+
+.timeline-section{
+  padding: 100px 15px;
+}
+.timeline-section h2{
+  margin-bottom: 5rem;
+  color: #eee;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow:  0 0 10px #cc5858;
+}
+.timeline-items{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #bbfff3;
+  left: calc(50% - 1px);
+}
+.timeline-item{
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child{
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even){
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+  height: 21px;
+  width: 21px;
+  background-color: var(--3rd--main-color);
+  box-shadow: 0 0 25px rgb(253, 144, 253);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+.timeline-date{
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin: 6px 0 15px;
+}
+.timeline-content{
+  background-color: #cc5858;
+  backdrop-filter: blur(20px);
+  border: 2px solid white;
+  box-shadow: 0 0 20px var(--3rd--main-color);
+  padding: 30px;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.timeline-content:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--3rd--main-color);
+}
+.timeline-content h3{
+  font-size: 20px;
+  color: white;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.timeline-content p{
+  color:rgb(253, 226, 235);
+  opacity: 0.8s;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
 
   /* Resume Section */
 .resume {
